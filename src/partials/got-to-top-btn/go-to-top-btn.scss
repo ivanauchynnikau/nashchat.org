@@ -1,0 +1,22 @@
+.go-to-top-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #cac1c1;
+  background: white;
+  color: #aba2a2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0 0 3px #b5adad;
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,50 @@
+.header {
+  height: 60px;
+  width: 100%;
+  background: #f2f2f25e;
+  background-image: url('./../../assets/images/header/eyes-background.gif');
+  background-position: center -58px;
+  background-size: 60%;
+  position: relative;
+  padding: 10px 0;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 4px 0 #e4e1e1;
+  @media(max-width: 1440px) {
+    background-position: center -18px;
+  }
+  @media(max-width: 1024px) {
+    background-size: 90%;
+  }
+  @media(max-width: 640px) {
+    background-size: 70%;
+    background-position: center 0;
+  }
+  @media(max-width: 520px) {
+    background-size: cover;
+    background-position: center 0;
+  }
+  &__logo {
+    transition: all .2s ease-out;
+    height: 26px;
+    @media(max-width: 640px) {
+      height: 18px;
+    }
+    &:hover {
+      transform: scale(1.03);
+    }
+    &-link {
+      cursor: pointer;
+      height: 36px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      padding: 10px;
+      @media(max-width: 640px) {
+        background: #fff;
+        padding: 10px 20px;
+        box-shadow: 0 0 1px #d8d8d8;
+      }
+    }
+  }
+}
