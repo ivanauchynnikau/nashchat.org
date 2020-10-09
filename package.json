@@ -9,6 +9,9 @@
     "analyze": "NODE_ENV=analyze webpack --config webpack.conf.js",
     "heroku-postbuild": "NODE_ENV=production webpack --config webpack.conf.js"
   },
+  "engines": {
+    "node": "11.15.0"
+  },
   "keywords": [],
   "author": "Ivan Auchynnikau",
   "license": "ISC",
