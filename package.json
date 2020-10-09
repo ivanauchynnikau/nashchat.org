@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --port 9000 --open --watch --config webpack.conf.js",
     "prod": "NODE_ENV=production webpack --config webpack.conf.js",
-    "analyze": "NODE_ENV=analyze webpack --config webpack.conf.js"
+    "analyze": "NODE_ENV=analyze webpack --config webpack.conf.js",
+    "heroku-postbuild": "NODE_ENV=production webpack --config webpack.conf.js"
   },
   "keywords": [],
   "author": "Daniel F. Padilla",
