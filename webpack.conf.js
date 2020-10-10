@@ -99,12 +99,6 @@ module.exports = {
     }, {
       from: 'src/assets/images/favicon/*',
       to: 'images/favicon/[name].[ext]',
-    }, {
-      from: 'index.php',
-      to: '[name].[ext]',
-    }, {
-      from: 'composer.json',
-      to: '[name].[ext]',
     }]),
     new WebpackBuildNotifierPlugin({
       title: `nashchat ${NODE_ENV}`,
