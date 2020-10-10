@@ -100,9 +100,6 @@ module.exports = {
       from: 'src/assets/images/favicon/*',
       to: 'images/favicon/[name].[ext]',
     }, {
-      from: '.htaccess',
-      to: '[name].[ext]',
-    }, {
       from: 'index.php',
       to: '[name].[ext]',
     }, {
