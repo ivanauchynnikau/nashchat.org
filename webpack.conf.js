@@ -53,10 +53,6 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        // loader: 'eslint-loader',
-        // options: {
-        //   failOnError: false
-        // }
       },
       {
         test: /\.(html)$/,
@@ -105,6 +101,12 @@ module.exports = {
       to: 'images/favicon/[name].[ext]',
     }, {
       from: '.htaccess',
+      to: '[name].[ext]',
+    }, {
+      from: 'index.php',
+      to: '[name].[ext]',
+    }, {
+      from: 'composer.json',
       to: '[name].[ext]',
     }]),
     new WebpackBuildNotifierPlugin({
