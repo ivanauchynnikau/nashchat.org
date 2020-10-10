@@ -3,7 +3,7 @@
 # ------------------------------
 
 # builded prod files
-dist
+public_html
 
 # ------------------------------
 # Dotenv environment variables

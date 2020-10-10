@@ -22,14 +22,14 @@ const pages = [
 module.exports = {
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: './public_html',
   },
   entry: {
     main: './src/index.js',
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public_html'),
   },
   module: {
     rules: [
@@ -96,7 +96,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['public_html']),
     new CopyWebpackPlugin([{
       from: 'src/assets/images/gallery/big-img-gallery/*.jpg',
       to: 'images/gallery/big-img-gallery/[name].[ext]',
@@ -119,7 +119,7 @@ module.exports = {
 pages.forEach((pageName) => {
   module.exports.plugins.push(new HtmlWebpackPlugin({
     template: `src/pages/${pageName}.html`,
-    filename: path.resolve(__dirname, `dist/${pageName}.html`),
+    filename: path.resolve(__dirname, `public_html/${pageName}.html`),
     alwaysWriteToDisk: true,
     inlineSource: NODE_ENV === 'production' ? '.(css)$' : false,
   }));
