@@ -1,0 +1,63 @@
+.who-we-are {
+  position: relative;
+
+  &__text {
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 49px;
+    color: #3E3F43;
+
+    & ._bold {
+      font-weight: 800;
+    }
+
+    & ._light {
+      color: #878787;
+    }
+  }
+
+  &__content {
+    font-size: 0;
+  }
+
+  &__left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    position: relative;
+
+    &:after {
+      width: 278px;
+      height: 378px;
+      content: '';
+      background: #F2F2F2;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 50px;
+      z-index: 1;
+      padding-top: 40px;
+    }
+
+    &-img {
+      position: relative;
+      z-index: 2;
+      max-height: 561px;
+      margin-bottom: 45px;
+      top: 32px;
+      left: 38px;
+    }
+  }
+
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    z-index: 2;
+    position: relative;
+    padding-top: 110px;
+
+  }
+}

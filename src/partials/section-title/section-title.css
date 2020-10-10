@@ -1,0 +1,46 @@
+.section-title {
+  position: relative;
+  padding-bottom: 65px;
+
+  &._enjoy-us {
+    padding-bottom: 115px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__title {
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    position: relative;
+    padding-left: 42px;
+
+    &:after {
+      background: url(../../assets/images/bear_icon.svg) no-repeat;
+      width: 33px;
+      height: 33px;
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &__ghost {
+    top: -22px;
+    position: absolute;
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: right;
+    color: #F2F2F2;
+    right: 0;
+  }
+}

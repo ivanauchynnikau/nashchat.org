@@ -1,0 +1,13 @@
+.seo-section {
+  padding-top: 30px;
+  padding-bottom: 75px;
+
+  &__text {
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #767676;
+  }
+}

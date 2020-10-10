@@ -1,17 +1,15 @@
 body {
   min-width: 320px;
   font-size: 22px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Nunito", Arial, serif;
   color: #3f3f3f;
   scroll-behavior: smooth;
 }
-* {
+
+*,
+*:after,
+*::before {
   box-sizing: border-box;
-}
-p {
-  & + & {
-    margin-top: 15px;
-  }
 }
 
 .container {
@@ -19,9 +17,6 @@ p {
   margin: 0 auto;
   padding: 0 20px;
   height: 100%;
-  @media(max-width: 640px) {
-    padding: 0 10px;
-  }
 }
 
 /* fit footer to the bottom of the page */
@@ -29,44 +24,32 @@ p {
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   height: 100%;
 }
+
 .wrapper {
   width: 100%;
   display: table;
   height: 100%;
 }
+
 .content {
   display: table-row;
   height: 100%;
-}
+  position: relative;
 
-
-/* blog-list page styles */
-.blog-list-page {
-  .container {
-    max-width: 1080px;
+  &:after {
+    width: calc(100% / 2.6);
+    height: 968px;
+    content: '';
+    background: #F2F2F2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 90px;
+    z-index: 1;
   }
-}
-
-
-/* scroll styles */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: lightgray;
-  border-radius: 10px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #c0c0c0;
 }
