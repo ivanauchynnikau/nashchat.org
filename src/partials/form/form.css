@@ -27,6 +27,7 @@
     border: 2px solid #00477F;
     padding: 5px 12px;
     width: 100%;
+    background: #F2F2F2;
 
     &::placeholder {
       color: #C4C4C4;
@@ -48,6 +49,7 @@
     border: 2px solid #00477F;
     padding: 5px 12px;
     width: 100%;
+    background: #F2F2F2;
 
     &::placeholder {
       color: #C4C4C4;
