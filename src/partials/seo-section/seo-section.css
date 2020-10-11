@@ -2,6 +2,11 @@
   padding-top: 30px;
   padding-bottom: 50px;
 
+  @media (max-width: 480px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &__text {
     font-family: "Nunito", Arial, serif;
     font-style: normal;
@@ -9,5 +14,10 @@
     font-size: 14px;
     line-height: 16px;
     color: #767676;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }

@@ -8,6 +8,25 @@
     line-height: 49px;
     color: #3E3F43;
 
+    @media (max-width: 1200px) {
+      padding-left: 40px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+      padding-left: 0;
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    &._bottom {
+      max-width: 515px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+
     & ._bold {
       font-weight: 800;
     }
@@ -19,6 +38,42 @@
 
   &__content {
     font-size: 0;
+    position: relative;
+    padding-bottom: 280px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 20px;
+    }
+
+    &:before {
+      content: '';
+      width: 250px;
+      height: 262px;
+      position: absolute;
+      background: url(./../../assets/images/bear_bg_image.svg) no-repeat center;
+      background-size: contain;
+      bottom: 20px;
+      left: -130px;
+
+      @media (max-width: 768px) {
+        bottom: 0;
+      }
+    }
+    
+    &:after {
+      position: absolute;
+      right: 60px;
+      bottom: 70px;
+      content: '';
+      width: 375px;
+      height: 520px;
+      background: url(./../../assets/images/who-we-are/who_we_are_bg.png) no-repeat;
+      background-size: cover;
+
+      @media (max-width: 1024px) {
+      	content: none;
+      }
+    }
   }
 
   &__left {
@@ -26,6 +81,12 @@
     vertical-align: middle;
     width: 50%;
     position: relative;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
 
     &:after {
       width: 278px;
@@ -39,6 +100,13 @@
       border-top-right-radius: 50px;
       z-index: 1;
       padding-top: 40px;
+
+      @media (max-width: 480px) {
+        height: 300px;
+        width: 250px;
+        left: -20px;
+        top: -10px;
+      }
     }
 
     &-img {
@@ -46,8 +114,15 @@
       z-index: 2;
       max-height: 561px;
       margin-bottom: 45px;
-      top: 32px;
-      left: 38px;
+      max-width: 100%;
+      margin-top: 32px;
+      margin-left: 38px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-left: 15px;
+      }
     }
   }
 
@@ -59,5 +134,14 @@
     position: relative;
     padding-top: 110px;
 
+    @media (max-width: 1200px) {
+      padding-top: 70px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      padding-top: 20px;
+    }
   }
 }

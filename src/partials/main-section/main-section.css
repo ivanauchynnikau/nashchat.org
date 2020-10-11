@@ -1,5 +1,10 @@
 .main-section {
   background: #fff;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
 
   &__subtitle {
     font-family: "Nunito", Arial, serif;
@@ -7,8 +12,18 @@
     font-weight: normal;
     font-size: 28px;
     line-height: 40px;
-    margin-bottom: 30px;
-    padding-top: 170px;
+
+    position: relative;
+    z-index: 3;
+    padding-right: 20px;
+    margin-bottom: 35px;
+
+    @media (max-width: 768px) {
+      padding-top: 0;
+      font-size: 48px;
+      line-height: 53px;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -18,14 +33,40 @@
     font-size: 72px;
     line-height: 74px;
     color: #313235;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    padding-top: 170px;
+    position: relative;
+    z-index: 3;
+    padding-right: 20px;
+
+    @media (max-width: 1200px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 0;
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   &__btns {
+    position: relative;
+    z-index: 3;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+
     &-link {
       transition: opacity 0.2s ease-in-out;
       display: inline-block;
       width: 230px;
+
+      @media (max-width: 768px) {
+        max-width: 220px;
+        width: 50%;
+      }
 
       img {
         width: 100%;
@@ -44,12 +85,43 @@
 
   &__content {
     font-size: 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 253px;
+      height: 286px;
+      position: absolute;
+      background: url(./../../assets/images/bear_bg_image.svg) no-repeat center;
+      background-size: contain;
+      bottom: 0;
+      right: 440px;
+      z-index: 1;
+    }
+
+    &:before {
+      content: '';
+      width: 342px;
+      height: 383px;
+      position: absolute;
+      background: url(./../../assets/images/bear_bg_image.svg) no-repeat center;
+      background-size: contain;
+      bottom: 130px;
+      left: -260px;
+      z-index: 2;
+    }
   }
 
   &__left {
     display: inline-block;
     vertical-align: top;
     width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      margin-bottom: 30px;
+    }
   }
 
   &__right {
@@ -58,10 +130,31 @@
     width: 50%;
     text-align: right;
 
+    @media (max-width: 768px) {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+
     &-img {
       max-width: 472px;
       position: relative;
       z-index: 3;
+
+      @media (max-width: 1200px) {
+      	max-width: 400px;
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 420px;
+        position: relative;
+        left: 15px;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 280px;
+      }
     }
   }
 }

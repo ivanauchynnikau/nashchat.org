@@ -7,25 +7,32 @@
     font-size: 0;
   }
 
-  &__left {
+  &__logo {
     display: inline-block;
     vertical-align: middle;
     width: 20%;
+
+    &-img {
+      width: 140px;
+    }
   }
 
-  &__right {
+  &__nav {
     padding-left: 50px;
+    padding-right: 40px;
     display: inline-block;
     vertical-align: middle;
     width: 80%;
     text-align: right;
-  }
-
-  &__nav {
     position: relative;
     z-index: 3;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &-item {
+      font-family: "Nunito", Arial, serif;
       color: rgba(34, 34, 34, 0.75);
       text-decoration: none;
       font-size: 16px;
@@ -35,16 +42,6 @@
       & + & {
         margin-left: 40px;
       }
-    }
-  }
-
-
-  &__logo {
-    width: 140px;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 0.9;
     }
   }
 }

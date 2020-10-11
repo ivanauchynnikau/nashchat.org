@@ -23,9 +23,13 @@
     line-height: 31px;
     color: #333333;
     margin-bottom: 75px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 35px;
+    }
   }
 
-  &__left {
+  &__form {
     display: inline-block;
     width: 75%;
     vertical-align: top;
@@ -33,12 +37,23 @@
     border-top-right-radius: 100px;
     padding: 54px 64px;
     background: #F2F2F2;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 40px);
+      padding: 42px 50px;
+    }
   }
 
-  &__right {
+  &__contacts {
     position: absolute;
     display: inline-block;
-    min-width: 510px;
+    min-width: 490px;
     vertical-align: top;
     background: #FFFFFF;
     border: 1px solid #A8DCEC;
@@ -48,6 +63,19 @@
     border-bottom-left-radius: 50px;
     right: 0;
     top: 10px;
+
+    @media (max-width: 1200px) {
+      position: static;
+      margin-bottom: 26px;
+      padding: 40px 52px;
+    }
+
+    @media (max-width: 480px) {
+      min-width: auto;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: calc(100% + 40px);
+    }
 
     &-top {
       margin-bottom: 10px;
@@ -61,6 +89,18 @@
       line-height: 38px;
       color: #333;
       margin-bottom: 8px;
+
+      @media (max-width: 768px) {
+        width: 320px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 22px;
+        line-height: 30px;
+        width: 260px;
+        margin: 0 auto;
+      }
 
       a {
         text-decoration: none;

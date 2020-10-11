@@ -1,5 +1,6 @@
 .what-we-have {
   padding-bottom: 120px;
+  overflow: hidden;
 
   &__content {
     position: relative;
@@ -13,23 +14,29 @@
       background-size: contain;
       bottom: 50px;
       right: -130px;
+      z-index: -1;
     }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 70px;
+    grid-gap: 50px;
     align-items: stretch;
 
+    @media (max-width: 1024px) {
+      grid-gap: 30px;
+    }
+
     &-item {
-      padding: 54px 28px;
+      padding: 32px 28px;
       border: 2px solid #E5EAEE;
       border-top-right-radius: 120px;
       border-bottom-left-radius: 120px;
       position: relative;
       overflow: hidden;
       height: 505px;
+      background: #fff;
 
       &:after {
         content: '';

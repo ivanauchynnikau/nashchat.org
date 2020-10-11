@@ -16,4 +16,4 @@ import './partials/seo-section/seo-section.css';
 import './partials/got-to-top-btn/go-to-top-btn.css';
 
 // js
-import './partials/got-to-top-btn/go-to-top-btn';
+// import './partials/got-to-top-btn/go-to-top-btn';

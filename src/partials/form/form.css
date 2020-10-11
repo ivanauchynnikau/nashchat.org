@@ -59,6 +59,11 @@
     font-size: 0;
     margin-left: -8px;
     margin-right: -8px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &__col {
@@ -67,5 +72,11 @@
     width: calc(50% - 16px);
     margin-left: 8px;
     margin-right: 8px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
