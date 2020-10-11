@@ -1,7 +1,7 @@
 ## Install
 
 ```bash
-$ cd hotimko.com
+$ cd nashchat.org
 $ npm i
 $ npm run dev
 ```
