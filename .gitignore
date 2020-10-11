@@ -2,9 +2,6 @@
 # Prod build
 # ------------------------------
 
-# builded prod files
-public_html
-
 # ------------------------------
 # Dotenv environment variables
 # ------------------------------
