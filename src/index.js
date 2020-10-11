@@ -13,6 +13,7 @@ import './partials/header/header.css';
 import './partials/section-title/section-title.css';
 import './partials/form/form.css';
 import './partials/seo-section/seo-section.css';
+import './partials/got-to-top-btn/go-to-top-btn.css';
 
 // js
 import './partials/got-to-top-btn/go-to-top-btn';

@@ -1,3 +1,89 @@
 .footer {
-  background: red;
+  margin-top: 25px;
+  margin-bottom: 40px;
+
+  &__content {
+    padding-top: 30px;
+    border-top: 1px solid #C4C4C4;
+    font-size: 0;
+  }
+
+  &__copyright {
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #8D8D8D;
+    margin-top: 20px;
+  }
+
+  &__logo {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  &__left {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+  }
+
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    font-size: 0;
+    text-align: right;
+  }
+
+  &__col {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+
+    &._third {
+      width: 35%;
+    }
+
+    & + & {
+      margin-left: 50px;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.3766px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    text-align: left;
+    display: block;
+    font-family: "Nunito", Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.1818px;
+    line-height: 25px;
+    color: #8D8D8D;
+    text-decoration: none;
+
+    & + & {
+    margin-top: 20px;
+  }
+
+    &:focus,
+    &:hover {
+      color: #5f5e5e;
+    }
+
+    &:active {
+      color: #404040;
+    }
+  }
 }
