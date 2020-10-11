@@ -35,18 +35,18 @@
   }
 
   &__ghost {
-    top: -22px;
+    top: -32px;
     position: absolute;
     font-family: "Nunito", Arial, serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 72px;
-    line-height: 110px;
+    font-size: 90px;
+    line-height: 130px;
     text-align: right;
     color: #F2F2F2;
     right: 0;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
       font-size: 55px;
     }
 

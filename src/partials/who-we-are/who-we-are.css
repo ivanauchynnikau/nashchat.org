@@ -41,6 +41,10 @@
     position: relative;
     padding-bottom: 280px;
 
+    @media (max-width: 1024px) {
+      padding-bottom: 50px;
+    }
+
     @media (max-width: 768px) {
       padding-bottom: 20px;
     }
@@ -55,7 +59,16 @@
       bottom: 20px;
       left: -130px;
 
+      @media (max-width: 1024px) {
+        background-size: contain;
+        left: auto;
+        bottom: 110px;
+        right: -70px;
+      }
+
       @media (max-width: 768px) {
+        left: -130px;
+        right: auto;
         bottom: 0;
       }
     }

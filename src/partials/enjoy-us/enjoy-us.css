@@ -17,10 +17,6 @@
     margin-bottom: 60px;
   }
 
-  &__content {
-
-  }
-
   &__list {
     font-size: 0;
 
@@ -124,16 +120,17 @@
       &-button {
         display: block;
         width: 100%;
-        transition: 0.2s ease-in-out;
-
-        &:focus,
-        &:hover {
-          opacity: 0.8;
-        }
-
-        &:active {
-          opacity: 0.7;
-        }
+        cursor: default;
+        //transition: 0.2s ease-in-out;
+        //
+        //&:focus,
+        //&:hover {
+        //  opacity: 0.8;
+        //}
+        //
+        //&:active {
+        //  opacity: 0.7;
+        //}
 
         &-img {
           width: 100%;
