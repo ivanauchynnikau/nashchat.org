@@ -14,7 +14,6 @@ const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { NODE_ENV } = process.env.NODE_ENV;
 
 const pages = [
-  '404',
   'index',
   'terms-of-use',
 ];
