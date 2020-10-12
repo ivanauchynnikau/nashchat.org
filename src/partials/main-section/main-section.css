@@ -165,12 +165,10 @@
       @media (max-width: 768px) {
         max-width: 420px;
         position: relative;
-        left: 25px;
       }
 
       @media (max-width: 480px) {
         max-width: 280px;
-        left: 15px;
       }
     }
   }

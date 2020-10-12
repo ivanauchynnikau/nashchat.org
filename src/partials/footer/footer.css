@@ -2,6 +2,10 @@
   margin-top: 25px;
   margin-bottom: 40px;
 
+  @media (max-width: 480px) {
+    margin-bottom: 10px;
+  }
+
   &__content {
     padding-top: 30px;
     border-top: 1px solid #C4C4C4;
@@ -120,6 +124,7 @@
     @media (max-width: 480px) {
       font-size: 18px;
       line-height: 25px;
+      margin-bottom: 10px;
     }
   }
 
@@ -145,12 +150,12 @@
     }
 
     & + & {
-    margin-top: 20px;
+      margin-top: 20px;
 
-    @media (max-width: 480px) {
-      margin-top: 12px;
+      @media (max-width: 768px) {
+        margin-top: 12px;
+      }
     }
-  }
 
     &:focus,
     &:hover {

@@ -91,7 +91,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    display: flex;
+    display: inline-block;
     align-items: center;
     text-align: center;
     padding: 11px 40px;

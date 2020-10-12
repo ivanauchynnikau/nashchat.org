@@ -71,7 +71,7 @@ module.exports = {
         use: [{
           loader: 'file-loader',
           options: {
-            name: 'images/common/[name]-[hash].[ext]',
+            name: 'images/common/[name].[ext]',
           },
         }],
       },
