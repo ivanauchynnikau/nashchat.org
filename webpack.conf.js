@@ -18,17 +18,19 @@ const pages = [
   'terms-of-use',
 ];
 
+const buildFolderName = 'root';
+
 module.exports = {
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './public_html',
+    contentBase: `./${buildFolderName}`,
   },
   entry: {
     main: './src/index.js',
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'public_html'),
+    path: path.resolve(__dirname, buildFolderName),
   },
   module: {
     rules: [
@@ -91,7 +93,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CleanWebpackPlugin(['public_html']),
+    new CleanWebpackPlugin([buildFolderName]),
     new CopyWebpackPlugin([{
       from: 'src/assets/images/gallery/big-img-gallery/*.jpg',
       to: 'images/gallery/big-img-gallery/[name].[ext]',
@@ -111,7 +113,7 @@ module.exports = {
 pages.forEach((pageName) => {
   module.exports.plugins.push(new HtmlWebpackPlugin({
     template: `src/pages/${pageName}.html`,
-    filename: path.resolve(__dirname, `public_html/${pageName}.html`),
+    filename: path.resolve(__dirname, `${buildFolderName}/${pageName}.html`),
     alwaysWriteToDisk: true,
     inlineSource: NODE_ENV === 'production' ? '.(css)$' : false,
   }));
