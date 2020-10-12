@@ -30,7 +30,7 @@
       vertical-align: middle;
       width: calc(33% - 70px);
       background: #FFFFFF;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       padding: 16px 22px;
       position: relative;

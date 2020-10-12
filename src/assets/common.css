@@ -41,7 +41,7 @@ body {
 
   &:after {
     width: calc(100% / 2.6);
-    height: 968px;
+    height: 940px;
     content: '';
     background: #F2F2F2;
     position: absolute;

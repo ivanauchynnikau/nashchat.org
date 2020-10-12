@@ -2,6 +2,20 @@
   position: relative;
   padding-bottom: 65px;
 
+  &._terms {
+    padding-bottom: 16px;
+    transition: opacity .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    };
+
+    @media (max-width: 768px) {
+      padding-bottom: 14px;
+    }
+  }
+
   @media (max-width: 768px) {
     padding-bottom: 20px;
   }
@@ -15,9 +29,14 @@
     position: relative;
     padding-left: 42px;
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       font-size: 33px;
       line-height: 45px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+      line-height: 36px;
     }
 
     &:after {
@@ -28,9 +47,7 @@
       content: '';
       position: absolute;
       left: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
+      top: 5px;
     }
   }
 

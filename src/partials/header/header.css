@@ -12,6 +12,10 @@
     vertical-align: middle;
     width: 20%;
 
+    &-link {
+      display: inline-block;
+    }
+
     &-img {
       width: 140px;
     }
@@ -86,7 +90,7 @@
     &-burger {
       background: transparent;
       border: none;
-      width: 28px;
+      width: 30px;
       height: 14px;
       padding: 12px;
       position: relative;

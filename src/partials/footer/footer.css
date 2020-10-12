@@ -1,6 +1,8 @@
 .footer {
   margin-top: 25px;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
 
   @media (max-width: 480px) {
     margin-bottom: 10px;
