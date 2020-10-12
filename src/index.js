@@ -16,4 +16,20 @@ import './partials/seo-section/seo-section.css';
 import './partials/got-to-top-btn/go-to-top-btn.css';
 
 // js
-// import './partials/got-to-top-btn/go-to-top-btn';
+import './partials/got-to-top-btn/go-to-top-btn';
+import './partials/header/header.js';
+
+$(document).ready(() => {
+  const $body = $('body');
+
+  $body.on('click', '[data-selector="header-nav-item"]', (event) => {
+    event.preventDefault();
+
+    const $burgerBtn = $('[data-selector="header-burger-btn"]');
+    $burgerBtn.click();
+
+    const id = $(event.target).attr('href');
+    const { top } = $(id).offset();
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+});

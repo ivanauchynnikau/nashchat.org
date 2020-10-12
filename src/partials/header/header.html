@@ -6,12 +6,21 @@
 					<img class="header__logo-img" src="./../../assets/images/logo.svg" alt="">
 				</a>
 			</div>
-			<nav class="header__nav">
-				<a class="header__nav-item" href="">О нас</a>
-				<a class="header__nav-item" href="">Как это работает</a>
-				<a class="header__nav-item" href="">Категории</a>
-				<a class="header__nav-item" href="">Контакты</a>
-			</nav>
+			<div class="header__nav-wrapper">
+				<button class="header__nav-burger"
+								data-selector="header-burger-btn"
+				>
+					<span></span>
+				</button>
+				<nav class="header__nav"
+						 data-selector="header-nav"
+				>
+					<a data-selector="header-nav-item" class="header__nav-item" href="#about-us">О нас</a>
+					<a data-selector="header-nav-item" class="header__nav-item" href="#how-it-works">Как это работает</a>
+					<a data-selector="header-nav-item" class="header__nav-item" href="#categories">Категории</a>
+					<a data-selector="header-nav-item" class="header__nav-item" href="#contacts">Контакты</a>
+				</nav>
+			</div>
 		</div>
 	</div>
 </header>

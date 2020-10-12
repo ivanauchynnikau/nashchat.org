@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+
   parserOptions: {
     parser: 'babel-eslint',
     sourceType: 'module'
@@ -7,6 +8,8 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
+    "commonjs": true,
+    "jquery": true
   },
   extends: ['airbnb-base'],
   globals: {

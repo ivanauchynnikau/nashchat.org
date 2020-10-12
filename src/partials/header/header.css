@@ -18,17 +18,34 @@
   }
 
   &__nav {
-    padding-left: 50px;
-    padding-right: 40px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 80%;
-    text-align: right;
-    position: relative;
-    z-index: 3;
+    width: 100%;
 
     @media (max-width: 768px) {
       display: none;
+      background: #000;
+      opacity: 0.9;
+      width: 175px;
+      border-bottom-left-radius: 30px;
+      position: absolute;
+      right: -20px;
+      padding: 38px 14px;
+      top: -25px;
+      text-align: left;
+    }
+
+    &-wrapper {
+      padding-left: 50px;
+      padding-right: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 80%;
+      text-align: right;
+      position: relative;
+      z-index: 3;
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+      }
     }
 
     &-item {
@@ -43,10 +60,106 @@
       &:hover,
       &:focus {
         color: #00477F;
+
+        @media (max-width: 768px) {
+          color: #929292;
+        }
       }
 
       & + & {
         margin-left: 40px;
+
+        @media (max-width: 768px) {
+          margin-left: 0;
+          margin-top: 8px;
+        }
+      }
+
+      @media (max-width: 768px) {
+      	color: #fff;
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &-burger {
+      background: transparent;
+      border: none;
+      width: 28px;
+      height: 14px;
+      padding: 12px;
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      display: none;
+      z-index: 4;
+
+      @media (max-width: 768px) {
+        display: inline-block;
+      }
+
+      &._active {
+        span {
+          opacity: 0;
+          border-color: #fff;
+        }
+
+        &:before {
+          top: 11px;
+          transform: rotate(45deg);
+          border-color: #fff;
+        }
+
+        &:after {
+          bottom: 10px;
+          transform: rotate(-45deg);
+          border-color: #fff;
+        }
+      }
+
+      &:before,
+      &:after {
+        border-radius: 5px;
+        content: '';
+        width: 100%;
+        border-bottom: 3px solid #00477F;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: transform .3s ease-in-out,
+                    border-color .3s ease-in-out,
+                    top .3s ease-in-out,
+                    bottom .3s ease-in-out;
+
+        &:focus,
+        &:hover {
+          @media (max-width: 768px) {
+            border-color: #929292;
+          }
+        }
+      }
+
+      &:after {
+        bottom: 0;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      span {
+        transition: opacity .3s ease-in-out;
+        border-bottom: 3px solid #00477F;
+        display: block;
+        border-radius: 5px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        height: 3px;
+        bottom: 0;
+        margin: auto;
       }
     }
   }

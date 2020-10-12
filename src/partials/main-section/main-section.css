@@ -34,7 +34,7 @@
     margin-bottom: 30px;
     padding-top: 170px;
     position: relative;
-    z-index: 3;
+    z-index: 2;
     padding-right: 20px;
 
     @media (max-width: 1200px) {
