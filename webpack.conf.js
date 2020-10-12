@@ -18,7 +18,7 @@ const pages = [
   'terms-of-use',
 ];
 
-const buildFolderName = 'root';
+const buildFolderName = 'docs';
 
 module.exports = {
   devtool: 'inline-source-map',
