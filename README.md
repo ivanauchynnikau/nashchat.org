@@ -1,5 +1,7 @@
 ## Install
 
+https://ivanauchynnikau.github.io/nashchat.org/public_path/
+
 ```bash
 $ cd nashchat.org
 $ npm i
