@@ -1,6 +1,10 @@
 .form {
   &__item {
     margin-bottom: 28px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__label {
@@ -12,6 +16,11 @@
     line-height: 31px;
     color: #333333;
     margin-bottom: 12px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   &__input {
@@ -29,9 +38,18 @@
     width: 100%;
     background: #F2F2F2;
 
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
     &::placeholder {
       color: #C4C4C4;
       font-size: 22px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -52,9 +70,18 @@
     background: #F2F2F2;
     border-bottom-left-radius: 50px;
 
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
     &::placeholder {
       color: #C4C4C4;
       font-size: 22px;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
   }
 
