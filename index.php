@@ -144,7 +144,9 @@ if(isset($data['feedback_submit'])) {
 			<div class="main-section__right">
 				<img
 					class="main-section__right-img"
-					src="images/common/main_section_img.png"/>
+					src="images/common/main_section_img.png"
+					alt=""
+				/>
 			</div>
 		</div>
   </div>
@@ -419,21 +421,27 @@ if(isset($data['feedback_submit'])) {
 							 class="contact-us__social-link">
 							<img
 								class="contact-us__social-img"
-								src="images/common/instagram.svg"/>
+								src="images/common/instagram.svg"
+								alt=""
+							/>
 						</a>
 						<a href="https://www.google.com/"
 							 target="_blank"
 							 class="contact-us__social-link">
 							<img
 								class="contact-us__social-img"
-								src="images/common/facebook.svg"/>
+								src="images/common/facebook.svg"
+								alt=""
+							/>
 						</a>
 						<a href="https://www.google.com/"
 							 target="_blank"
 							 class="contact-us__social-link">
 							<img
 								class="contact-us__social-img"
-								src="images/common/vk.svg"/>
+								src="images/common/vk.svg"
+								alt=""
+							/>
 						</a>
 					</div>
 				</div>
@@ -578,4 +586,5 @@ if(isset($data['feedback_submit'])) {
 
 <script type="text/javascript" src="main.js"></script></body>
 </html>
+
 
