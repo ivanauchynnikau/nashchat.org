@@ -25,7 +25,7 @@ $(document).ready(() => {
   const $body = $('body');
 
   // scroll to specified section, works only on home page
-  $body.on('click', '[data-selector="header-nav-item"]', (event) => {
+  $body.on('click', '[data-selector="link-nav-item"]', (event) => {
     if (window.location.pathname !== '/') return;
 
     const $burgerBtn = $('[data-selector="header-burger-btn"]');

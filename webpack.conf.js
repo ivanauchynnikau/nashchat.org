@@ -93,11 +93,11 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CleanWebpackPlugin([buildFolderName]),
+    // new CleanWebpackPlugin([buildFolderName]),
     new CopyWebpackPlugin([{
       from: 'src/assets/images/gallery/big-img-gallery/*.jpg',
       to: 'images/gallery/big-img-gallery/[name].[ext]',
-    }, {
+    },{
       from: 'src/assets/images/favicon/*',
       to: 'images/favicon/[name].[ext]',
     }]),
