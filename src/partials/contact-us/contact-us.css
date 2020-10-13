@@ -61,12 +61,12 @@
   &__contacts {
     position: absolute;
     display: inline-block;
-    min-width: 480px;
+    max-width: 500px;
     vertical-align: top;
     background: #FFFFFF;
     border: 1px solid #A8DCEC;
     box-sizing: border-box;
-    padding: 40px 90px;
+    padding: 40px 70px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     right: 0;
