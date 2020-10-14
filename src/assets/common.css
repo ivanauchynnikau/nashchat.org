@@ -18,6 +18,11 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   height: 100%;
+
+  &._terms-page {
+    position: relative;
+    max-width: 860px;
+  }
 }
 
 /* fit footer to the bottom of the page */

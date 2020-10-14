@@ -3,9 +3,20 @@
   padding-bottom: 65px;
 
   &._terms {
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     transition: opacity .2s ease-in-out;
     cursor: pointer;
+
+    .section-title {
+      &__title {
+        font-size: 32px;
+
+        @media (max-width: 768px) {
+          font-size: 28px;
+          padding-bottom: 0;
+        }
+      }
+    }
 
     &:hover {
       opacity: .8;
