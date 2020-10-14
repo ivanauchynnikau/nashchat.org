@@ -37,7 +37,7 @@ body {
   position: relative; }
   .content:after {
     width: calc(100% / 2.6);
-    height: 940px;
+    height: 830px;
     content: '';
     background: #F2F2F2;
     position: absolute;
@@ -291,7 +291,7 @@ table {
         display: block;
         text-align: center; } }
     .main-section__right-img {
-      max-width: 472px;
+      max-width: 412px;
       position: relative;
       z-index: 3; }
       @media (max-width: 1200px) {
