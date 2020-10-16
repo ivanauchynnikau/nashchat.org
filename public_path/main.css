@@ -1,54 +1,3 @@
-body {
-  min-width: 360px;
-  font-size: 22px;
-  font-family: "Nunito", Arial, serif;
-  color: #3f3f3f;
-  scroll-behavior: smooth;
-  overflow-x: auto; }
-
-*,
-*:after,
-*::before {
-  box-sizing: border-box; }
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 100%; }
-  .container._terms-page {
-    position: relative;
-    max-width: 890px; }
-
-/* fit footer to the bottom of the page */
-* {
-  margin: 0;
-  padding: 0; }
-
-html,
-body {
-  height: 100%; }
-
-.wrapper {
-  width: 100%; }
-
-.content {
-  height: 100%;
-  position: relative; }
-  .content:after {
-    width: calc(100% / 2.6);
-    height: 830px;
-    content: '';
-    background: #F2F2F2;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-bottom-left-radius: 90px;
-    z-index: 1; }
-    @media (max-width: 1200px) {
-      .content:after {
-        height: 790px;
-        width: calc(100% / 2.9); } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -176,6 +125,57 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+body {
+  min-width: 360px;
+  font-size: 22px;
+  font-family: "Nunito", Arial, serif;
+  color: #3f3f3f;
+  scroll-behavior: smooth;
+  overflow-x: auto; }
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%; }
+  .container._terms-page {
+    position: relative;
+    max-width: 890px; }
+
+/* fit footer to the bottom of the page */
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.wrapper {
+  width: 100%; }
+
+.content {
+  height: 100%;
+  position: relative; }
+  .content:after {
+    width: calc(100% / 2.6);
+    height: 830px;
+    content: '';
+    background: #F2F2F2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 90px;
+    z-index: 1; }
+    @media (max-width: 1200px) {
+      .content:after {
+        height: 790px;
+        width: calc(100% / 2.9); } }
 .main-section {
   background: #fff;
   overflow: hidden; }
@@ -1305,13 +1305,11 @@ table {
     font-size: 22px;
     line-height: 27px;
     color: #3E3F43;
-    margin-top: 8px;
-    margin-left: 20px; }
+    margin-top: 8px; }
     @media (max-width: 768px) {
       .terms-conditions__text {
         font-size: 18px;
-        line-height: 24px;
-        margin-left: 0; } }
+        line-height: 24px; } }
     .terms-conditions__text + .terms-conditions__text {
       margin-top: 20px; }
   .terms-conditions__list {
@@ -1321,6 +1319,8 @@ table {
       margin-bottom: 8px;
       font-size: 22px;
       line-height: 27px; }
+      .terms-conditions__list-item b {
+        font-weight: bold; }
       @media (max-width: 768px) {
         .terms-conditions__list-item {
           font-size: 18px;
@@ -1338,15 +1338,13 @@ table {
     .terms-conditions__section-content {
       display: none; }
 
-ol.terms-conditions__list ol.terms-conditions__list {
-  margin-left: 20px; }
-  @media (max-width: 768px) {
-    ol.terms-conditions__list ol.terms-conditions__list {
-      margin-left: 0; } }
-
 ol.terms-conditions__list {
   margin-bottom: 20px;
   list-style: none; }
+  ol.terms-conditions__list._bold li.terms-conditions__list-item li:before {
+    font-weight: normal; }
+  ol.terms-conditions__list._bold li.terms-conditions__list-item:before {
+    font-weight: bold; }
 
 ul.terms-conditions__list {
   list-style: initial;

@@ -121,12 +121,10 @@
     line-height: 27px;
     color: #3E3F43;
     margin-top: 8px;
-    margin-left: 20px;
 
     @media (max-width: 768px) {
       font-size: 18px;
       line-height: 24px;
-      margin-left: 0;
     }
 
     & + & {
@@ -142,6 +140,10 @@
       margin-bottom: 8px;
       font-size: 22px;
       line-height: 27px;
+
+      b {
+        font-weight: bold;
+      }
 
       @media (max-width: 768px) {
         font-size: 18px;
@@ -173,17 +175,24 @@
   }
 }
 
-ol.terms-conditions__list ol.terms-conditions__list {
-  margin-left: 20px;
-
-  @media (max-width: 768px) {
-    margin-left: 0;
-  }
-}
-
 ol.terms-conditions__list {
   margin-bottom: 20px;
   list-style: none;
+
+  &._bold {
+    li.terms-conditions__list-item {
+
+      li {
+        &:before {
+          font-weight: normal;
+        }
+      }
+
+      &:before {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 ul.terms-conditions__list {
@@ -195,3 +204,5 @@ ul.terms-conditions__list {
     margin-left: 0;
   }
 }
+
+
