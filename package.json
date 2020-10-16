@@ -4,7 +4,7 @@
   "description": "A basic setup of webpack goodness. Packed with common fronted workflow to help ease development headache. Ready with development and production config. Feel free to fork and enhance. Have an Awesome frontend coding!",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --port 9000 --open --watch --config webpack.conf.js",
+    "dev": "NODE_ENV=development webpack-dev-server --port 8080 --watch --config webpack.conf.js",
     "prod": "NODE_ENV=production webpack --config webpack.conf.js",
     "analyze": "NODE_ENV=analyze webpack --config webpack.conf.js",
     "start": "NODE_ENV=production webpack --config webpack.conf.js",
