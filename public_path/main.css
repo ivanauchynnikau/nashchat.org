@@ -1328,6 +1328,7 @@ table {
   .terms-conditions__section {
     margin-bottom: 30px; }
     .terms-conditions__section-title {
+      font-family: "Nunito", Arial, serif;
       font-size: 24px;
       font-weight: bold;
       line-height: 30px;

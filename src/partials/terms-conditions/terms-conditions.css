@@ -154,6 +154,7 @@
     margin-bottom: 30px;
 
     &-title {
+      font-family: "Nunito", Arial, serif;
       font-size: 24px;
       font-weight: bold;
       line-height: 30px;
