@@ -3,7 +3,7 @@
   padding-bottom: 65px;
 
   &._terms {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
     transition: opacity .2s ease-in-out;
     cursor: pointer;
 
