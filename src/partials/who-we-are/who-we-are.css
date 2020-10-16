@@ -82,7 +82,7 @@
       content: '';
       width: 375px;
       height: 520px;
-      background: url(./../../assets/images/who-we-are/who_we_are_bg.png) no-repeat;
+      background: url(./../../assets/images/who-we-are/who_we_are.png) no-repeat;
       background-size: cover;
 
       @media (max-width: 1024px) {
