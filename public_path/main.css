@@ -456,7 +456,7 @@ table {
       content: '';
       width: 375px;
       height: 520px;
-      background: url(images/common/who_we_are_bg.png) no-repeat;
+      background: url(images/common/who_we_are_img_bg.png) no-repeat;
       background-size: cover; }
       @media (max-width: 1024px) {
         .who-we-are__content:after {
