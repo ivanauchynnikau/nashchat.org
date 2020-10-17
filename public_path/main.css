@@ -451,11 +451,11 @@ table {
           bottom: 0; } }
     .who-we-are__content:after {
       position: absolute;
-      right: 60px;
-      bottom: 70px;
+      right: 0;
+      bottom: -20px;
       content: '';
-      width: 375px;
-      height: 520px;
+      width: 440px;
+      height: 600px;
       background: url(images/common/who_we_are.png) no-repeat;
       background-size: cover; }
       @media (max-width: 1024px) {
