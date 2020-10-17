@@ -97,9 +97,15 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: 'src/assets/images/gallery/big-img-gallery/*.jpg',
       to: 'images/gallery/big-img-gallery/[name].[ext]',
-    },{
+    }, {
       from: 'src/assets/images/favicon/*',
       to: 'images/favicon/[name].[ext]',
+    }, {
+      from: 'browserconfig.xml',
+      to: 'browserconfig.xml',
+    }, {
+      from: 'manifest.json',
+      to: 'manifest.json',
     }]),
     new WebpackBuildNotifierPlugin({
       title: `nashchat ${NODE_ENV}`,
