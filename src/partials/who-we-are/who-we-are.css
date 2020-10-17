@@ -6,8 +6,8 @@
   &__text {
     font-family: "Nunito", Arial, serif;
     font-style: normal;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 35px;
+    line-height: 48px;
     color: #3E3F43;
 
     @media (max-width: 1200px) {
@@ -41,7 +41,7 @@
   &__content {
     font-size: 0;
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 220px;
 
     @media (max-width: 1024px) {
       padding-bottom: 50px;
@@ -74,15 +74,15 @@
         bottom: 0;
       }
     }
-    
+
     &:after {
       position: absolute;
       right: 0;
       bottom: -20px;
       content: '';
-      width: 440px;
-      height: 600px;
-      background: url(./../../assets/images/who-we-are/who_we_are.png) no-repeat;
+      width: 552px;
+      height: 700px;
+      background: url(./../../assets/images/who-we-are/who_we_are_bg_1x.png) no-repeat;
       background-size: cover;
 
       @media (max-width: 1024px) {
@@ -104,15 +104,15 @@
     }
 
     &:after {
-      width: 278px;
-      height: 378px;
+      width: 330px;
+      height: 400px;
       content: '';
       background: #F2F2F2;
       position: absolute;
       left: 0;
       top: 0;
-      border-bottom-left-radius: 50px;
-      border-top-right-radius: 50px;
+      border-bottom-left-radius: 80px;
+      border-top-right-radius: 80px;
       z-index: 1;
       padding-top: 40px;
 
