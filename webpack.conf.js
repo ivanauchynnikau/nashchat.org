@@ -15,7 +15,7 @@ const { NODE_ENV } = process.env.NODE_ENV;
 
 const pages = [
   'index',
-  'terms-of-use',
+  'privacy',
 ];
 
 const buildFolderName = 'public_path';
