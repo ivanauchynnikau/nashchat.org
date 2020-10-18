@@ -28,8 +28,7 @@ if(isset($data['feedback_submit'])) {
     }
     if(empty($warnings)) {
 
-        $to = "ivanauchynnikau@gmail.com"; // test
-//         $to = "hotvipdesign@gmail.com"; // Почта для принимания обратной связи
+        $to = "hotvipdesign@gmail.com"; // Почта для принимания обратной связи
         $from = "info@nashchat.org"; // Почта с которой отправляется письмо
         $subject = 'Обратная связь с NashChat.org'; 
         $message = 'Имя: '.$name."\r\n".'Страна: '.$country."\r\n".'Email: '.$email."\r\n".'Сообщение: '.$text."\r\n"; 
