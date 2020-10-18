@@ -400,7 +400,8 @@ table {
     font-style: normal;
     font-size: 35px;
     line-height: 48px;
-    color: #3E3F43; }
+    color: #3E3F43;
+    position: relative; }
     @media (max-width: 1200px) {
       .who-we-are__text {
         padding-left: 40px; } }

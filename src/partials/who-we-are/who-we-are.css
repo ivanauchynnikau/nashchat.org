@@ -9,6 +9,7 @@
     font-size: 35px;
     line-height: 48px;
     color: #3E3F43;
+    position: relative;
 
     @media (max-width: 1200px) {
       padding-left: 40px;
