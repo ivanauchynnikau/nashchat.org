@@ -51,12 +51,12 @@ if(isset($data['feedback_submit'])) {
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>НашЧат - чат-объявления для русскоговорящих за границей</title>
 	<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="description" content="НашЧат- пространство для общения и полезной информации для русских и всех русскоговорящих за границей. В нашем приложении мы предлагаем помощь, советы, объявления, поиск и предложение работы, знакомства в Европе и на всех континентах. Ищете русские магазины, русские школы, Российские Посольства и Консульства, православные храмы в Германии, Франции, Англии, США, Швейцарии и по всему миру? Вы найдёте адрес у нас! Здесь вы найдёте даже бесплатные вещи в дар от соотечественников. Наше приложение уникально- это кладезь действительно необходимой информации для русского туриста или иммигранта.">
-<meta name="keywords" content="общение, и всех русскоговорящих за границейб помощь, советы, объявления, поиск и предложение работы, знакомства в Европе">
+<title>НашЧат - чат-объявления для русскоговорящих за границей</title>
+<meta name="description" content="Найди своих за границей! НашЧат - облачное приложение - мессенджер для подачи объявлений и общения русскоговорящих за границей">
+<meta name="keywords" content="общение, русскоговорящие за границей, помощь, советы, объявления, поиск и предложение работы, знакомства в Европе">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="nashchat.org">
@@ -133,18 +133,18 @@ if(isset($data['feedback_submit'])) {
 					</div>
 					<!-- TODO add link -->
 					<a class="main-section__btns-link" href="#">
-						<img src="images/common/apple.png" alt="apple store button">
+						<img src="images/common/apple.svg" alt="apple store button">
 					</a>
 					<!-- TODO add link -->
 					<a class="main-section__btns-link" href="#">
-						<img src="images/common/google.png" alt="apple play button">
+						<img src="images/common/google.svg" alt="apple play button">
 					</a>
 				</div>
 			</div>
 			<div class="main-section__right">
 				<img
 					class="main-section__right-img"
-					src="images/common/main_section_img.png"
+					src="images/common/main_section_img_1x.png"
 					alt=""
 				/>
 			</div>
@@ -168,15 +168,14 @@ if(isset($data['feedback_submit'])) {
 			<div class="who-we-are__left">
 				<img
 					class="who-we-are__left-img"
-					src="images/common/who_we_are_phones.png"
+					src="images/common/who_we_are_phones_1x.png"
 					alt=""
 				/>
 			</div>
 			<div class="who-we-are__right">
 				<div class="who-we-are__text">
-					<span class="_bold">НашЧат -</span>
-					<br>
-					это уникальный сервис, объединяющий русскоговорящих <span class="_light">людей из разных стран</span>
+					<span class="_bold">НашЧат -</span> это уникальный сервис,
+					объединяющий русскоговорящих <span class="_light">людей из разных стран</span>
 				</div>
 			</div>
 			<div class="who-we-are__text _bottom">
@@ -211,12 +210,12 @@ if(isset($data['feedback_submit'])) {
 					<div class="enjoy-us__list-item-buttons">
 						<!-- TODO add link -->
 						<a href="#" target="_blank" class="enjoy-us__list-item-button">
-							<img src="images/common/google.png"
+							<img src="images/common/google.svg"
 									 alt="" class="enjoy-us__list-item-button-img">
 						</a>
 						<!-- TODO add link -->
 						<a href="#" target="_blank" class="enjoy-us__list-item-button">
-							<img src="images/common/apple.png"
+							<img src="images/common/apple.svg"
 									 alt="" class="enjoy-us__list-item-button-img">
 						</a>
 					</div>
@@ -229,7 +228,7 @@ if(isset($data['feedback_submit'])) {
 						Зарегистрируйся
 					</div>
 					<img class="enjoy-us__list-item-img _two"
-							 src="images/common/enjoy_2.png" alt="">
+							 src="images/common/enjoy_2_1x.png" alt="">
 				</div>
 				<div class="enjoy-us__list-item">
 					<div class="enjoy-us__list-item-num">
@@ -572,9 +571,8 @@ if(isset($data['feedback_submit'])) {
 				</div>
 				<div class="footer__col _third">
 					<div class="footer__title">Документы</div>
-					<a href="/terms-of-use.html" class="footer__link">Условия и Политика</a>
-					<a href="/terms-of-use.html" class="footer__link">Условия использования</a>
-					<a href="/terms-of-use.html" class="footer__link">Политика конфиденциальности</a>
+					<a href="/terms-of-use.html#terms" class="footer__link">Условия пользования</a>
+					<a href="/terms-of-use.html#policy" class="footer__link">Политика конфиденциальности</a>
 				</div>
 			</div>
 			<div class="footer__copyright">© <script>document.write(new Date().getFullYear())</script> НашЧат</div>
@@ -586,5 +584,3 @@ if(isset($data['feedback_submit'])) {
 
 <script type="text/javascript" src="main.js"></script></body>
 </html>
-
-
