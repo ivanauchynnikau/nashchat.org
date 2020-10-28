@@ -29,7 +29,7 @@ module.exports = {
     main: './src/index.js',
   },
   output: {
-    filename: '[name].js',
+    filename: `[name]-${Math.floor(Date.now() / 1000)}.js`,
     path: path.resolve(__dirname, buildFolderName),
   },
   module: {
@@ -92,8 +92,8 @@ module.exports = {
     $: 'jQuery',
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
-    // new CleanWebpackPlugin([buildFolderName]),
+    new ExtractTextPlugin(`[name]-${Math.floor(Date.now() / 1000)}.css`),
+    new CleanWebpackPlugin([buildFolderName]),
     new CopyWebpackPlugin([{
       from: 'src/assets/images/gallery/big-img-gallery/*.jpg',
       to: 'images/gallery/big-img-gallery/[name].[ext]',

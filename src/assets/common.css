@@ -7,6 +7,15 @@ body {
   overflow-x: auto;
 }
 
+// honeypot input
+.important-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: -1000px;
+  bottom: -1000px;
+}
+
 *,
 *:after,
 *::before {

@@ -85,7 +85,7 @@ if(isset($data['feedback_submit'])) {
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-<link href="main.css" rel="stylesheet"></head>
+<link href="main-1603901511.css" rel="stylesheet"></head>
 <body>
 <div class="wrapper">
 	<main class="content">
@@ -452,7 +452,9 @@ if(isset($data['feedback_submit'])) {
 				<div class="contact-us__subtitle">
 					Оставьте свою заявку, и мы обязательно вам ответим
 				</div>
-				<form method="POST" class="form" data-selector="contact-form">
+				<form method="POST" class="form"
+							data-selector="contact-form"
+				>
 					<div class="form__line">
 						<div class="form__col">
 							<div class="form__item">
@@ -522,8 +524,18 @@ if(isset($data['feedback_submit'])) {
 										id="text" cols="30" rows="10"
 						></textarea>
 					</div>
+					<input type="text"
+								 class="important-input"
+								 name="important-input"
+								 required
+								 data-selector="important-info-input"
+					>
 					<div class="contact-us__btn">
-						<button type="submit" name="feedback_submit" class="form__button">Отправить</button>
+						<button type="submit"
+										name="feedback_submit"
+										data-selector="contact-us-submit-btn"
+										class="form__button"
+						>Отправить</button>
 					</div>
 				</form>
 			</div>
@@ -610,5 +622,5 @@ if(isset($data['feedback_submit'])) {
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script type="text/javascript" src="main.js"></script></body>
+<script type="text/javascript" src="main-1603901511.js"></script></body>
 </html>

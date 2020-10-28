@@ -4,6 +4,10 @@ $(document).ready(() => {
   const activeNavClass = '_active';
 
   $(document).on('click', burgerBtn, (e) => {
+    const { clientWidth } = document.documentElement;
+    const viewportWidth = Math.max(clientWidth || 0, window.innerWidth || 0);
+    if (viewportWidth > 768) return;
+
     if ($(e.target).hasClass(activeNavClass)) {
       $(burgerBtn).removeClass(activeNavClass);
       $headerNav.fadeOut();

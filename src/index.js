@@ -37,6 +37,24 @@ $(document).ready(() => {
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 
+  $body.on('click', '[data-selector="contact-us-submit-btn"]', (e) => {
+    const $importantInput = $('[data-selector="important-info-input"]');
+    if ($importantInput.val().length) {
+      e.preventDefault();
+      return;
+    }
+
+    const email = $('[name="email"]')[0].checkValidity();
+    const name = $('[name="name"]')[0].checkValidity();
+    const country = $('[name="country"]')[0].checkValidity();
+    const text = $('[name="text"]')[0].checkValidity();
+
+    if (email && name && country && text) {
+      $importantInput.attr('required', false);
+      $('[data-selector="contact-us-submit-btn"]').click();
+    }
+  });
+
   function onPageLoad() {
     const modalContent = '[data-selector="modal-content"]';
     const $successModal = $('[data-selector="modal-success"]');
