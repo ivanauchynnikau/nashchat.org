@@ -1,3 +1,60 @@
+body {
+  min-width: 360px;
+  font-size: 22px;
+  font-family: "Nunito", Arial, serif;
+  color: #3f3f3f;
+  scroll-behavior: smooth;
+  overflow-x: auto; }
+
+.important-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: -1000px; }
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%; }
+  .container._terms-page {
+    position: relative;
+    max-width: 890px; }
+
+/* fit footer to the bottom of the page */
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+
+.wrapper {
+  width: 100%; }
+
+.content {
+  height: 100%;
+  position: relative; }
+  .content:after {
+    width: calc(100% / 2.6);
+    height: 830px;
+    content: '';
+    background: #F2F2F2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 90px;
+    z-index: 1; }
+    @media (max-width: 1200px) {
+      .content:after {
+        height: 790px;
+        width: calc(100% / 2.9); } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -125,64 +182,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-body {
-  min-width: 360px;
-  font-size: 22px;
-  font-family: "Nunito", Arial, serif;
-  color: #3f3f3f;
-  scroll-behavior: smooth;
-  overflow-x: auto; }
-
-.important-input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  top: -1000px;
-  bottom: -1000px; }
-
-*,
-*:after,
-*::before {
-  box-sizing: border-box; }
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 100%; }
-  .container._terms-page {
-    position: relative;
-    max-width: 890px; }
-
-/* fit footer to the bottom of the page */
-* {
-  margin: 0;
-  padding: 0; }
-
-html,
-body {
-  height: 100%; }
-
-.wrapper {
-  width: 100%; }
-
-.content {
-  height: 100%;
-  position: relative; }
-  .content:after {
-    width: calc(100% / 2.6);
-    height: 830px;
-    content: '';
-    background: #F2F2F2;
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-bottom-left-radius: 90px;
-    z-index: 1; }
-    @media (max-width: 1200px) {
-      .content:after {
-        height: 790px;
-        width: calc(100% / 2.9); } }
 .main-section {
   background: #fff;
   overflow: hidden; }
@@ -1409,4 +1408,4 @@ ul.terms-conditions__list {
       opacity: .8;
       cursor: pointer; }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLTE2MDM5MDE1MTEuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLTE2MDM5MDIzMzUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

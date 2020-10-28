@@ -85,7 +85,7 @@ if(isset($data['feedback_submit'])) {
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-<link href="main-1603901511.css" rel="stylesheet"></head>
+<link href="main-1603902335.css" rel="stylesheet"></head>
 <body>
 <div class="wrapper">
 	<main class="content">
@@ -622,5 +622,5 @@ if(isset($data['feedback_submit'])) {
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script type="text/javascript" src="main-1603901511.js"></script></body>
+<script type="text/javascript" src="main-1603902335.js"></script></body>
 </html>
